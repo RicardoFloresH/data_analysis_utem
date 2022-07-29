@@ -1,2 +1,2 @@
-# data_analysis_utm
+# Técnicas de Análisis de Datos
 Material del curso UTEM
