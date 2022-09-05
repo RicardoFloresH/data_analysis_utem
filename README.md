@@ -9,6 +9,7 @@ Material del curso UTEM
 | Template Transfer Learning | Template ilustrativo con técnica _transfer learning_ | [Google Colab]() |
 | Template Feed Forward (MLP) | Template ilustrativo con arquitectura _multilayer perceptron_ | [Google Colab]() |
 | Kaggle - ImageFolder | Notebook en Kaggle con tutorial para cargar imagenes |  [Intro-to-PyTorch: Loading Image Data](https://www.kaggle.com/code/leifuer/intro-to-pytorch-loading-image-data/notebook)|
+| Datasets cargados en PyTorch | Datasets para cargar con en el modulo  `torchvision.datasets` | [Documentación PyTorch](https://pytorch.org/vision/stable/datasets.html) |
 
 
 
