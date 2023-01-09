@@ -5,6 +5,7 @@ Material del curso UTEM
 
 | Recursos      | Descripcción | Link |
 | ------------- | ------------ | --------------------- |
+| Intro Google Colab | Introducción al uso de Google Colab para crear notebooks | [Google Colab](https://colab.research.google.com/drive/15_bqCF_vwc_JZT3q06U2TXi7pg30TikZ?usp=sharing) |
 | Template CNN  | Template ilustrativo con arquitectura convolucional | [Google Colab](https://colab.research.google.com/drive/1ppaKOm_5lsNutPmCEO9w62llX7R9t_Az?usp=sharing) |
 | Template Transfer Learning | Template ilustrativo con técnica _transfer learning_ | [Google Colab](https://colab.research.google.com/drive/1h2sN5KLFoS20NRLyzE1JASXBqmOTJLVh?usp=sharing) |
 | Template Feed Forward (MLP) | Template ilustrativo con arquitectura _multilayer perceptron_ | [Google Colab](https://colab.research.google.com/drive/1w_plY4-f3l4FPRbM9dNzL3j12hc4bExk?usp=sharing) |
