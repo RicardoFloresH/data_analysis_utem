@@ -77,8 +77,18 @@ Si, _spoiler_, así se carga el dataset. Vayamos ahora al siguiente Google Colab
 </a>
 
 
-## Crear un nuevo dataset
+## Crear el `mini-croupier-mtg`
 
+
+En esta sección crearemos un conjunto de datos a partir de una muestra del
+`croupier-mtg-dataset`. La muestra se puede descargar del archivo zip [acá]().
+
+### `ImageFolder` approach
+
+Antes de saltar a la creación del dataset, analicemos cómo se encuentran
+las imágenes estructuradas en el repositorio de datos. 
+
+### Dataset desde 0
 
 <p align="center">
 <img src="./assets/hf-new-dataset.png" width="760" height="525" alt="A screenshot that shows the 'new dataset' option in a HF profle">
