@@ -21,5 +21,14 @@ _Introducing (🥁)...the [`croupier-mtg-dataset`](https://huggingface.co/datase
 <img src="./assets/527518_elf.png" width="223" height="311" alt="Magic the Gathering card: Shessra, Death's Whisper">
 </p>
 
+Después de una arbitraria curatoría para seleccionar un grupo de criaturas y
+procesar la imagen para capturar solo la región de la carta que contiene la ilustración, 
+obtenemos el conjunto de imágenes que será nuestro dataset \o/
+
+<p align="center">
+<img src="./assets/croupier-mtg-dataset.png" alt="A set of Magic the Gathering card ilustrations">
+</p>
+
+
 
 
