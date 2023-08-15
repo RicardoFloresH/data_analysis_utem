@@ -25,25 +25,52 @@ Después de una arbitraria curatoría para seleccionar un grupo de cartas de cri
 procesar las imágenes de las cartas para solo capturar la región que contiene la ilustración, 
 obtenemos el conjunto de imágenes que será nuestro dataset \o/. Otra información
 que vamos a utilizar será el tipo de criatura, si observas con mayor atención
-en la imagen de la carta anterior _"Shessra, Death's Whisper"_, entre la ilustración
-y el cuadro donde aparece la mayor proporción de texto, hay una línea que dice
-_"Legendary Creature - Human Elf Warlock"_. Si las `X`'s de nuestro dataset son
-imágenes, los `y`'s son etiquetas indicando si la criatura es un elfo, caballero,
+en la imagen de la carta anterior, _"Shessra, Death's Whisper"_, entre la ilustración
+y el cuadro donde aparece la mayor proporción de texto, hay una línea de texto 
+que dice _"Legendary Creature - Human Elf Warlock"_. Si las `X`'s de nuestro dataset son
+imágenes, los `y`'s serán las etiquetas indicando si la criatura es un elfo, caballero,
 trasgo, o zoombie 🧟‍♀️. Ahhhh! Todo esto va a terminar en un modelo 
-que descubrirá un _mapping_ de `imagen` a `tipo_criatura`?! voy a poder clasificar
-criaturas?! No, solo vamos a crear un conjunto de datos, pero el resto te debería
-resultar más sencillo!
+que tomara imágenes y las clasificará en tipos de criatura?! Claro que no, el
+objetivo es construir el dataset, pero el resto te debería resultar bastante
+más sencillo!
+
 
 <p align="center">
 <img src="./assets/croupier-mtg-dataset.png" width="450" height="450" alt="A set of Magic the Gathering card ilustrations">
 </p>
 
-Sin entrar en mayores detalles, aún, este grupo de imágenes (archivos `.png` o `.jpg`) se subió [a este repositorio de la plataforma Hugging Face](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset), que al dar _click_ llegaran a una página que tiene la siguiente estructura:
+Sin entrar en mayores detalles, este grupo de imágenes (archivos `.png` o `.jpg`) se subió [a este repositorio de la plataforma Hugging Face](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset), que al dar _click_ llegaran a una página que tiene la siguiente estructura:
 
 
 <p align="center">
-<img src="./assets/croupier-repo-screenshot.png" width="650" height="525" alt="A screenshot that shows the croupier dataset in Hugging Face">
+<img src="./assets/croupier-repo-screenshot.png" width="760" height="525" alt="A screenshot that shows the croupier dataset in Hugging Face">
 </p>
+
+Personalmente me resulta fácil pensar la página que tenemos delante  como una especie
+de repositorio de GitHub, pero enfocado en conjunto de datos. Algunas
+observaciones sobre su contenido:
+
+* (A): Se indica el nombre del repositorio para buscarlo dentor del hub de conjunts de datos en Hugging Face (si no es privado). Importante, esos cuadritos al lado del nombre, permiten copiar la ruta
+del repositorio (i.e. `alkzar90/croupier-mtg-dataset`). El corazón son los _likes_ del repositorio, como a nadie le interesa mi repositorio, tiene 0 _likes_.
+* (B): En esta línea podemos ver las opciones `Dataset card` (especie de README en GitHub), de hecho, un archivo README permite editar esta especie de página con text y otra meta data de nuestro dataset. Luego, esta la opción `Files`, acá es la estructura de carpetas donde estan nuestros archivos, si das _click_ podrás navegar por los archivos y datos que se encuentra en el repositori. `Community` por ahora piensenlo como una página para mantener comunicación, levantar _issues_, o solicitar aclaraciones sobre el conjunto de datos. `Settings` son las configuraciones de su repositorio, acá pueden desde fijar la opción de privacidad, hasta borrarlo.
+* (C): Una de las cosas geniales de este repositorio es que cuenta con un visualizador
+del conjunto de datos. Si se utiliza una forma estandar de organizar los datos, la página
+automáticamente despliega una muestra del conjunto de datos. En el ejemplo, podemos ver un
+par de observacones, puros elfos...
+* (D): Información adicional, como el número de descargas del último mes, página web o repositorio si se indica, opciones para obtener el código y cargar el conjunto de datos en Python. 
+
+De hecho, al darle _click_ al botón _Use in dataset library_, se despliega un recuadro con
+el siguiente código:
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("alkzar90/croupier-mtg-dataset")
+```
+
+Si, _spoiler_, así se carga el maldito dataset.
+
+
 
 
 ## Crear un nuevo dataset
