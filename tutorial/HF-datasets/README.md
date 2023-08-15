@@ -26,10 +26,10 @@ procesar las imagenes de las cartas para solo capturar la región que contiene l
 obtenemos el conjunto de imágenes que será nuestro dataset \o/
 
 <p align="center">
-<img src="./assets/croupier-mtg-dataset.png" alt="A set of Magic the Gathering card ilustrations">
+<img src="./assets/croupier-mtg-dataset.png" width="450" height="450" alt="A set of Magic the Gathering card ilustrations">
 </p>
 
-Sin entrar en mayor detalles, este grupo de imagenes (archivos `.png` o `.jpg`) se subieron [a este repositorio de la plataforma Hugging Face](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset), que se ve de la siguiente forma:
+Sin entrar en mayores detalles aún, este grupo de imagenes (archivos `.png` o `.jpg`) se subió [a este repositorio de la plataforma Hugging Face](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset), que al dar _click_ llegaran a una página que tiene la siguiente estructura:
 
 
 <p align="center">
