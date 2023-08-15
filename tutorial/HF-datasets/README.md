@@ -56,8 +56,8 @@ del repositorio (i.e. `alkzar90/croupier-mtg-dataset`). El corazón son los _lik
 de nuestro dataset. Segundo, la opción `Files`, acá es la estructura de carpetas donde estan nuestros archivos, si das _click_ podrás navegar por los archivos y datos que se encuentra en el repositorio. Tercero, `Community`, por ahora piénsalo como una página para mantener comunicación entre usuarios, levantar _issues_, o solicitar aclaraciones sobre el conjunto de datos. Finalmente, `Settings` son las configuraciones del repositorio, se puede fijar desde la opción de privacidad hasta borrar el repositorio.
 * **(C):** Una de las cosas geniales de este repositorio es que cuenta con un visualizador
 del conjunto de datos. Si se utiliza una forma estandar de organizar los datos, la página
-automáticamente despliega una muestra del conjunto de datos. En el ejemplo, podemos ver un
-par de observacones, puros elfos. Cuando uno esta explorando distintos conjuntos de datos en el Hub, es útil esta opción, no queremos descargar cada dataset para saber qué contiene o como se estructura una observación.
+automáticamente despliega una pequeña muestra de estos. En el ejemplo, podemos ver un
+par de observaciones, 4 imágenes de elfos para ser exactos. Cuando uno esta explorando distintos conjuntos de datos en el Hub, es útil esta opción, no queremos descargar cada dataset para saber qué contiene o como se estructura una observación. El tamaño de algunos datasets esta en el orden de GBs o TBs.
 * **(D):** Información adicional, como el número de descargas del último mes, página web o repositorio si se indica, opciones para obtener el código y cargar el conjunto de datos en Python. 
 
 De hecho, al darle _click_ al botón _"Use in dataset library"_, se despliega un recuadro con
@@ -78,5 +78,5 @@ Si, _spoiler_, así se carga el maldito dataset. Vayamos ahora a eso.
 
 
 <p align="center">
-<img src="./assets/hf-new-dataset.png" width="650" height="525" alt="A screenshot that shows the 'new dataset' option in a HF profle">
+<img src="./assets/hf-new-dataset.png" width="760" height="525" alt="A screenshot that shows the 'new dataset' option in a HF profle">
 </p>
