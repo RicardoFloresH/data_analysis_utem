@@ -1,9 +1,11 @@
 # Tutorial Datasets con Hugging Face
 
+Por Cristóbal Alcázar,
+
+_Tiempo aproximado: 45 mínutos._
 
 En este tutorial vamos a crear nuestro propio conjunto de datos utilizando
-la plataforma Hugging Face 🤗. Si siguen todas las instrucciones van a desbloquear la hábilidad de crear repositorios para sus conjuntos de datos y cargarlos con la librería [`datasets`](https://huggingface.co/docs/datasets/index) en python usando una simple
-línea de código.
+la plataforma Hugging Face 🤗. Si sigues todas las instrucciones, desbloquearas la hábilidad de crear repositorios para tus propios conjuntos de datos y cargarlos con la librería [`datasets`](https://huggingface.co/docs/datasets/index) en python usando una simple línea de código.
 
 ¿Qué es Hugging Face (aka HF)? Es una start-up de Inteligencia Artificial fundada el año 2016 que dispone de una plataforma (o hub) para compartir modelos de machine learning, datasets, y aplicaciones. Además, desarrolla y mantiene distintas herramientas de código abierto para interactuar con la plataforma, y facilitar el entrenamiento, _fine-tuning_ de modelos, y compartir prototipos a través de _end-points_ de inferencia o demos (e.g. Gradio o Streamlit). Originalmente conocida por la popular librería [`transformer`](https://huggingface.co/docs/transformers/index) para modelos de Procesamiento de Lenguaje Natural, o NLP por su sigla en inglés, la cual se ha expandido rápidamente para cubrir otros campos como Visión por Computadora, Audio, entre otros. Esta librería es popular entre investigadores y desarrolladores por ser una de las primeras
 en abstraer y tomar ventaja (de manera seria) de los modelos pre-entrenados. Finalmente, tanto la librería como la plataforma se hicieron muy conocidas por el libro [_Natural Language Processing with Transformers. Building Language Applicationos with Hugging Face_](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/), donde uno de los co-autores es tambien uno de sus co-fundadores.
@@ -15,7 +17,8 @@ en abstraer y tomar ventaja (de manera seria) de los modelos pre-entrenados. Fin
 
 Comencemos con un conjunto de datos ya existente, veamos de qué se trata todo esto,  y luego exploremos cómo descargar y cargarlos en un Google Colab.
 
-_Introducing (🥁)...the [`croupier-mtg-dataset`](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset) 🎆!_ Cada observación es una imagen de una mítica criatura del popular juego de cartas coleccionables [_Magic the Gathering_](https://es.wikipedia.org/wiki/Magic:_El_encuentro). Si no tienes idea de lo que estoy hablando, no importa, solo basta saber que es un juego de cartas tipo Pokémon, y que lucen de la siguiente forma:
+_Introducing (redoble de 🥁)...the [`croupier-mtg-dataset`](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset) 🎆!_ Cada observación es una imagen de una mítica criatura del popular juego de cartas coleccionables [_Magic the Gathering_](https://es.wikipedia.org/wiki/Magic:_El_encuentro). Si no tienes idea de lo que estoy hablando, no importa, solo basta saber que es un juego de cartas tipo Pokémon, y que así luce
+una carta de criatura: 
 
 <p align="center">
 <img src="./assets/527518_elf.png" width="223" height="311" alt="Magic the Gathering card: Shessra, Death's Whisper">
@@ -46,18 +49,17 @@ Sin entrar en mayores detalles, este grupo de imágenes (archivos `.png` o `.jpg
 <img src="./assets/croupier-repo-screenshot.png" width="760" height="525" alt="A screenshot that shows the croupier dataset in Hugging Face">
 </p>
 
-Personalmente me resulta fácil pensar la página que tenemos delante  como una especie
+Personalmente me resulta fácil pensar la página que tenemos delante como una especie
 de repositorio de GitHub, pero enfocado en conjunto de datos. Algunas
 observaciones sobre su contenido:
 
 * **(A):** Se indica el nombre del repositorio para buscarlo dentro del hub de conjuntos de datos en Hugging Face (si no es privado). Importante, esos cuadritos al lado del nombre, permiten copiar la ruta
-del repositorio (i.e. `alkzar90/croupier-mtg-dataset`). El corazón son los _likes_ del repositorio, como a nadie le interesa mi repositorio, tiene 0 _likes_.
-* **(B):** En esta línea podemos ver las siguientes opciones. Primero, `Dataset card` (especie de README en GitHub), de hecho, es un archivo README que permite editar esta especie de página con texto y otra meta data
-de nuestro dataset. Segundo, la opción `Files`, acá es la estructura de carpetas donde estan nuestros archivos, si das _click_ podrás navegar por los archivos y datos que se encuentra en el repositorio. Tercero, `Community`, por ahora piénsalo como una página para mantener comunicación entre usuarios, levantar _issues_, o solicitar aclaraciones sobre el conjunto de datos. Finalmente, `Settings` son las configuraciones del repositorio, se puede fijar desde la opción de privacidad hasta borrar el repositorio.
+del repositorio (i.e. `alkzar90/croupier-mtg-dataset`). El corazón son los _likes_ del repositorio, parece que no a muchas personas les agrada este juego de cartas 🤔.
+* **(B):** En esta línea podemos ver las siguientes opciones. Primero, `Dataset card` (especie de README en GitHub), de hecho, es un archivo `README.md` que permite editar esta especie de página del dataset, tanto su texto descriptivo como otra meta data. Segundo, la opción `Files`, acá es la estructura de carpetas donde estan nuestros archivos, si das _click_ podrás navegar por los archivos y datos que se encuentra en el repositorio. Tercero, `Community`, por ahora piénsalo como una página para mantener comunicación entre usuarios, levantar _issues_, o solicitar aclaraciones sobre el conjunto de datos. Finalmente, `Settings` son las configuraciones del repositorio, se puede fijar desde la opción de privacidad hasta borrar el repositorio.
 * **(C):** Una de las cosas geniales de este repositorio es que cuenta con un visualizador
 del conjunto de datos. Si se utiliza una forma estandar de organizar los datos, la página
 automáticamente despliega una pequeña muestra de estos. En el ejemplo, podemos ver un
-par de observaciones, 4 imágenes de elfos para ser exactos. Cuando uno esta explorando distintos conjuntos de datos en el Hub, es útil esta opción, no queremos descargar cada dataset para saber qué contiene o como se estructura una observación. El tamaño de algunos datasets esta en el orden de GBs o TBs.
+par de observaciones, 4 imágenes de elfos para ser exactos. Cuando uno esta explorando distintos conjuntos de datos en el Hub, es útil esta opción, no queremos descargar cada dataset para saber qué contiene o cómo se estructura una observación. El tamaño de algunos datasets esta en el orden de GBs o TBs.
 * **(D):** Información adicional, como el número de descargas del último mes, página web o repositorio si se indica, opciones para obtener el código y cargar el conjunto de datos en Python. 
 
 De hecho, al darle _click_ al botón _"Use in dataset library"_, se despliega un recuadro con
@@ -69,7 +71,7 @@ from datasets import load_dataset
 dataset = load_dataset("alkzar90/croupier-mtg-dataset")
 ```
 
-Si, _spoiler_, así se carga el maldito dataset. Vayamos ahora a eso.
+Si, _spoiler_, así se carga el dataset. Vayamos ahora a eso.
 
 
 
