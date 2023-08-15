@@ -73,7 +73,7 @@ dataset = load_dataset("alkzar90/croupier-mtg-dataset")
 Si, _spoiler_, así se carga el dataset. Vayamos ahora al siguiente Google Colab.
 
 <a href="https://colab.research.google.com/drive/1T7tVsCI7NMnXmWhi35KXMSeZcpX1EJvB?usp=sharing" target="_blank">
-<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+<img src="https://colab.research.google.com/assets/colab-badge.svg" target="_blank" alt="Open In Colab">
 </a>
 
 
