@@ -22,13 +22,21 @@ _Introducing (🥁)...the [`croupier-mtg-dataset`](https://huggingface.co/datase
 </p>
 
 Después de una arbitraria curatoría para seleccionar un grupo de criaturas y
-procesar la imagen para capturar solo la región de la carta que contiene la ilustración, 
+procesar las imagenes de las cartas para solo capturar la región que contiene la ilustración, 
 obtenemos el conjunto de imágenes que será nuestro dataset \o/
 
 <p align="center">
 <img src="./assets/croupier-mtg-dataset.png" alt="A set of Magic the Gathering card ilustrations">
 </p>
 
+Sin entrar en mayor detalles, este grupo de imagenes (archivos `.png` o `.jpg`) se subieron a este repositorio de la plataforma Hugging Face, que se ve de la siguiente forma:
 
 
 
+
+## Crear un nuevo dataset
+
+
+<p align="center">
+<img src="./assets/hf-new-dataset.png" alt="A screenshot that shows the 'new dataset' option in a HF profle">
+</p>
