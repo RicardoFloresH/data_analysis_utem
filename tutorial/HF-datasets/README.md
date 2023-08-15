@@ -15,13 +15,13 @@ en abstraer y tomar ventaja (de manera seria) de los modelos pre-entrenados. Fin
 
 Comencemos con un conjunto de datos ya existente y exploremos primero cómo descargar y cargarlos en un Google Colab.
 
-_Introducing (🥁)...the [`croupier-mtg-dataset`](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset) 🎆!_ Cada observación es una imagen de una mítica criatura del popular juego de cartas coleccionables [_Magic the Gathering_](https://es.wikipedia.org/wiki/Magic:_El_encuentro). Si no tienes idea de lo que estoy hablando, no importa, solo basta saber que es un juego de cartas tipo Pokemon, y que visualmente tienen la siguiente forma:
+_Introducing (🥁)...the [`croupier-mtg-dataset`](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset) 🎆!_ Cada observación es una imagen de una mítica criatura del popular juego de cartas coleccionables [_Magic the Gathering_](https://es.wikipedia.org/wiki/Magic:_El_encuentro). Si no tienes idea de lo que estoy hablando, no importa, solo basta saber que es un juego de cartas tipo Pokemon, y que lucen de la siguiente forma:
 
 <p align="center">
 <img src="./assets/527518_elf.png" width="223" height="311" alt="Magic the Gathering card: Shessra, Death's Whisper">
 </p>
 
-Después de una arbitraria curatoría para seleccionar un grupo de criaturas y
+Después de una arbitraria curatoría para seleccionar un grupo de cartas de criaturas y
 procesar las imagenes de las cartas para solo capturar la región que contiene la ilustración, 
 obtenemos el conjunto de imágenes que será nuestro dataset \o/
 
@@ -29,9 +29,12 @@ obtenemos el conjunto de imágenes que será nuestro dataset \o/
 <img src="./assets/croupier-mtg-dataset.png" alt="A set of Magic the Gathering card ilustrations">
 </p>
 
-Sin entrar en mayor detalles, este grupo de imagenes (archivos `.png` o `.jpg`) se subieron a este repositorio de la plataforma Hugging Face, que se ve de la siguiente forma:
+Sin entrar en mayor detalles, este grupo de imagenes (archivos `.png` o `.jpg`) se subieron [a este repositorio de la plataforma Hugging Face](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset), que se ve de la siguiente forma:
 
 
+<p align="center">
+<img src="./assets/croupier-repo-screenshot.png" alt="A screenshot that shows the croupier dataset in Hugging Face">
+</p>
 
 
 ## Crear un nuevo dataset
