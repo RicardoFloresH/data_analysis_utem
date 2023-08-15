@@ -15,7 +15,7 @@ en abstraer y tomar ventaja (de manera seria) de los modelos pre-entrenados. Fin
 
 Comencemos con un conjunto de datos ya existente y exploremos primero cómo descargar y cargarlos en un Google Colab.
 
-_Introducing...the [`croupier-mtg-dataset`](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset)🎆!_ Cada observación es una imagen de una criatura del popular juego de cartas coleccionables [_Magic the Gathering_](https://es.wikipedia.org/wiki/Magic:_El_encuentro). Si no tienes idea de lo que estoy hablando, basta saber que es un juego de cartas tipo Pokemon, que visualmente son así:
+_Introducing (🥁)...the [`croupier-mtg-dataset`](https://huggingface.co/datasets/alkzar90/croupier-mtg-dataset) 🎆!_ Cada observación es una imagen de una mítica criatura del popular juego de cartas coleccionables [_Magic the Gathering_](https://es.wikipedia.org/wiki/Magic:_El_encuentro). Si no tienes idea de lo que estoy hablando, no importa, solo basta saber que es un juego de cartas tipo Pokemon, y que visualmente tienen la siguiente forma:
 
 <p align="center">
 <img src="./assets/527518_elf.png" width="223" height="311" alt="Magic the Gathering card: Shessra, Death's Whisper">
