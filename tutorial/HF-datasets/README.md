@@ -32,7 +32,7 @@ en la imagen de la carta anterior, _"Shessra, Death's Whisper"_, entre la ilustr
 y el cuadro donde aparece la mayor proporción de texto, hay una línea de texto 
 que dice _"Legendary Creature - Human Elf Warlock"_. Si las `X`'s de nuestro dataset son
 imágenes, los `y`'s serán las etiquetas indicando si la criatura es un elfo, caballero,
-trasgo, o zoombie 🧟‍♀️. Ahhhh! Todo esto va a terminar en un modelo 
+trasgo, o zombie 🧟‍♀️. Ahhhh! Todo esto va a terminar en un modelo 
 que tomara imágenes y las clasificará en tipos de criatura?! Claro que no, el
 objetivo es construir el dataset, pero el resto te debería resultar bastante
 más sencillo!
@@ -70,7 +70,8 @@ from datasets import load_dataset
 dataset = load_dataset("alkzar90/croupier-mtg-dataset")
 ```
 
-Si, _spoiler_, así se carga el dataset. Vayamos ahora al siguiente Google Colab.
+Si, _spoiler_, así se carga el dataset. Vayamos ahora al siguiente Google Colab
+para interactuar con el dataset en python.
 
 <a href="https://colab.research.google.com/drive/1T7tVsCI7NMnXmWhi35KXMSeZcpX1EJvB?usp=sharing" target="_blank">
 <img src="https://colab.research.google.com/assets/colab-badge.svg" target="_blank" alt="Open In Colab">
@@ -81,12 +82,36 @@ Si, _spoiler_, así se carga el dataset. Vayamos ahora al siguiente Google Colab
 
 
 En esta sección crearemos un conjunto de datos a partir de una muestra del
-`croupier-mtg-dataset`. La muestra se puede descargar del archivo zip [acá]().
+`croupier-mtg-dataset` y usando tu cuenta de Hugging Face. La muestra con los
+datos se puede descargar del archivo zip [acá]().
 
 ### `ImageFolder` approach
 
 Antes de saltar a la creación del dataset, analicemos cómo se encuentran
 las imágenes estructuradas en el repositorio de datos. 
+
+```
+/train/
+   |__img00.png
+   |__...
+   |__img10.png
+/val/
+   |__img11.png
+   |__...
+/test/
+   |__img16.png
+```
+
+...
+
+...
+
+
+Si bien uno podría crear un solo conjunto de datos y delegar la separación
+de las particiones al usuario, tiene sus ventajas dejarlo pre-establecido.
+La más notoria es comparar resultados directamente, Cualquier usuario que use
+el dataset, tendrá los mismos subconjuntos para entrenar, desarrollar, y evaluar
+las métricas finales.
 
 ### Dataset desde 0
 
