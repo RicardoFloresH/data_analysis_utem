@@ -50,13 +50,14 @@ Personalmente me resulta fácil pensar la página que tenemos delante  como una 
 de repositorio de GitHub, pero enfocado en conjunto de datos. Algunas
 observaciones sobre su contenido:
 
-* (A): Se indica el nombre del repositorio para buscarlo dentor del hub de conjunts de datos en Hugging Face (si no es privado). Importante, esos cuadritos al lado del nombre, permiten copiar la ruta
+* (A): Se indica el nombre del repositorio para buscarlo dentro del hub de conjuntos de datos en Hugging Face (si no es privado). Importante, esos cuadritos al lado del nombre, permiten copiar la ruta
 del repositorio (i.e. `alkzar90/croupier-mtg-dataset`). El corazón son los _likes_ del repositorio, como a nadie le interesa mi repositorio, tiene 0 _likes_.
-* (B): En esta línea podemos ver las opciones `Dataset card` (especie de README en GitHub), de hecho, un archivo README permite editar esta especie de página con text y otra meta data de nuestro dataset. Luego, esta la opción `Files`, acá es la estructura de carpetas donde estan nuestros archivos, si das _click_ podrás navegar por los archivos y datos que se encuentra en el repositori. `Community` por ahora piensenlo como una página para mantener comunicación, levantar _issues_, o solicitar aclaraciones sobre el conjunto de datos. `Settings` son las configuraciones de su repositorio, acá pueden desde fijar la opción de privacidad, hasta borrarlo.
+* (B): En esta línea podemos ver las siguientes opciones. Primero, `Dataset card` (especie de README en GitHub), de hecho, es un archivo README que permite editar esta especie de página con texto y otra meta data
+de nuestro dataset. Segundo, la opción `Files`, acá es la estructura de carpetas donde estan nuestros archivos, si das _click_ podrás navegar por los archivos y datos que se encuentra en el repositorio. Tercero, `Community`, por ahora piénsalo como una página para mantener comunicación entre usuarios, levantar _issues_, o solicitar aclaraciones sobre el conjunto de datos. Finalmente, `Settings` son las configuraciones del repositorio, se puede fijar desde la opción de privacidad hasta borrar el repositorio.
 * (C): Una de las cosas geniales de este repositorio es que cuenta con un visualizador
 del conjunto de datos. Si se utiliza una forma estandar de organizar los datos, la página
 automáticamente despliega una muestra del conjunto de datos. En el ejemplo, podemos ver un
-par de observacones, puros elfos...
+par de observacones, puros elfos. Cuando uno esta explorando distintos conjuntos de datos en el Hub, es útil esta opción, no queremos descargar cada dataset para saber qué contiene o como se estructura una observación.
 * (D): Información adicional, como el número de descargas del último mes, página web o repositorio si se indica, opciones para obtener el código y cargar el conjunto de datos en Python. 
 
 De hecho, al darle _click_ al botón _Use in dataset library_, se despliega un recuadro con
