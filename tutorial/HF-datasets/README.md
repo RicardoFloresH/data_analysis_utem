@@ -50,16 +50,15 @@ Sin entrar en mayores detalles, este grupo de imágenes (archivos `.png` o `.jpg
 </p>
 
 Personalmente me resulta fácil pensar la página que tenemos delante como una especie
-de repositorio de GitHub, pero enfocado en conjunto de datos. Algunas
-observaciones sobre su contenido:
+de repositorio de GitHub, pero especializado para conjuntos de datos. Algunas
+observaciones sobre su contenido y cómo navegar en este tipo de repos:
 
 * **(A):** Se indica el nombre del repositorio para buscarlo dentro del hub de conjuntos de datos en Hugging Face (si no es privado). Importante, esos cuadritos al lado del nombre, permiten copiar la ruta
 del repositorio (i.e. `alkzar90/croupier-mtg-dataset`). El corazón son los _likes_ del repositorio, parece que no a muchas personas les agrada este juego de cartas 🤔.
-* **(B):** En esta línea podemos ver las siguientes opciones. Primero, `Dataset card` (especie de README en GitHub), de hecho, es un archivo `README.md` que permite editar esta especie de página del dataset, tanto su texto descriptivo como otra meta data. Segundo, la opción `Files`, acá es la estructura de carpetas donde estan nuestros archivos, si das _click_ podrás navegar por los archivos y datos que se encuentra en el repositorio. Tercero, `Community`, por ahora piénsalo como una página para mantener comunicación entre usuarios, levantar _issues_, o solicitar aclaraciones sobre el conjunto de datos. Finalmente, `Settings` son las configuraciones del repositorio, se puede fijar desde la opción de privacidad hasta borrar el repositorio.
-* **(C):** Una de las cosas geniales de este repositorio es que cuenta con un visualizador
-del conjunto de datos. Si se utiliza una forma estandar de organizar los datos, la página
-automáticamente despliega una pequeña muestra de estos. En el ejemplo, podemos ver un
-par de observaciones, 4 imágenes de elfos para ser exactos. Cuando uno esta explorando distintos conjuntos de datos en el Hub, es útil esta opción, no queremos descargar cada dataset para saber qué contiene o cómo se estructura una observación. El tamaño de algunos datasets esta en el orden de GBs o TBs.
+* **(B):** En esta línea podemos ver las siguientes opciones. Primero, `Dataset card` (especie de README en GitHub), de hecho, es un archivo `README.md` que permite editar la página del dataset, tanto su texto descriptivo como otra meta data (e.g. _tasks, size cateogries, license_). Segundo, la opción `Files`, acá es la estructura de carpetas donde estan nuestros archivos, si das _click_ podrás navegar por los archivos y datos que se encuentra en el repositorio. Tercero, `Community`, por ahora piénsalo como una página para mantener comunicación entre usuarios, levantar _issues_ (tipo GitHub), o solicitar aclaraciones sobre el conjunto de datos. Finalmente, `Settings` son las configuraciones del repositorio, puedes realizar acciones tipo fijar la opción de privacidad o borrar el repositorio.
+* **(C):** Una de las cosas geniales de los repositorios de datos de Hugging Face es que cuentan con un visualizador del conjunto de datos. Si se utiliza una forma estandar de organizar los datos, la página
+automáticamente despliega una pequeña muestra de estos. En el ejemplo de arriba, podemos ver un
+par de observaciones, 4 imágenes de elfos para ser exactos. Cuando uno esta explorando distintos conjuntos de datos en el _hub_, es opción es muy útil, no queremos descargar cada dataset para saber qué contiene o cómo se estructura una observación. El tamaño de algunos datasets estan en el orden de GBs o TBs.
 * **(D):** Información adicional, como el número de descargas del último mes, página web o repositorio si se indica, opciones para obtener el código y cargar el conjunto de datos en Python. 
 
 De hecho, al darle _click_ al botón _"Use in dataset library"_, se despliega un recuadro con
@@ -71,9 +70,11 @@ from datasets import load_dataset
 dataset = load_dataset("alkzar90/croupier-mtg-dataset")
 ```
 
-Si, _spoiler_, así se carga el dataset. Vayamos ahora a eso.
+Si, _spoiler_, así se carga el dataset. Vayamos ahora al siguiente Google Colab.
 
-
+<a href="https://colab.research.google.com/drive/1T7tVsCI7NMnXmWhi35KXMSeZcpX1EJvB?usp=sharing" target="_blank">
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+</a>
 
 
 ## Crear un nuevo dataset
