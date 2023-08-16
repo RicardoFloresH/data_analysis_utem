@@ -78,12 +78,20 @@ para interactuar con el dataset en python.
 </a>
 
 
-## Crear el `mini-croupier-mtg`
+## Crear `mini-croupier` dataset
 
 
 En esta sección crearemos un conjunto de datos a partir de una muestra del
-`croupier-mtg-dataset` y usando tu cuenta de Hugging Face. La muestra con los
-datos se puede descargar del archivo zip [acá]().
+`croupier-mtg-dataset` y usando tu cuenta de Hugging Face. La muestra con los datos se puede descargar del archivo zip en [`assets/mini-croupier.zip`](https://github.com/RicardoFloresH/data_analysis_utem/raw/main/tutorial/HF-datasets/assets/mini-croupier.zip).
+
+---
+
+<p align="center">
+<img src="assets/567612_goblin.png" width="223" height="311" alt="goblin id card 567612">
+<img src="assets/571601a_knight.png" width="223" height="311" alt="knight id card 571601">
+</p>
+
+---
 
 ### `ImageFolder` approach
 
@@ -109,8 +117,8 @@ las imágenes estructuradas en el repositorio de datos.
 
 Si bien uno podría crear un solo conjunto de datos y delegar la separación
 de las particiones al usuario, tiene sus ventajas dejarlo pre-establecido.
-La más notoria es comparar resultados directamente, Cualquier usuario que use
-el dataset, tendrá los mismos subconjuntos para entrenar, desarrollar, y evaluar
+La más notoria es comparar resultados directamente: cualquier usuario que use
+el dataset tendrá los mismos subconjuntos para entrenar, desarrollar, y evaluar
 las métricas finales.
 
 ### Dataset desde 0
