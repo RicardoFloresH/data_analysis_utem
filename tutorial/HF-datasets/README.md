@@ -82,7 +82,7 @@ para interactuar con el dataset en python.
 
 
 En esta sección crearemos un conjunto de datos a partir de una muestra del
-`croupier-mtg-dataset` y usando tu cuenta de Hugging Face. La muestra con los datos se puede descargar del archivo zip en [`assets/mini-croupier.zip`](https://github.com/RicardoFloresH/data_analysis_utem/raw/main/tutorial/HF-datasets/assets/mini-croupier.zip).
+`croupier-mtg-dataset` y usando tu cuenta de Hugging Face. La muestra con los datos se puede descargar del archivo zip en [`assets/mini-croupier.zip`](https://github.com/RicardoFloresH/data_analysis_utem/raw/main/tutorial/HF-datasets/assets/mini-croupier.zip), y contiene solo dos tipos de criaturas: tragos (izquierda) y caballeros (derecha).
 
 ---
 
@@ -99,15 +99,26 @@ Antes de saltar a la creación del dataset, analicemos cómo se encuentran
 las imágenes estructuradas en el repositorio de datos. 
 
 ```
-/train/
-   |__img00.png
-   |__...
-   |__img10.png
-/val/
-   |__img11.png
-   |__...
-/test/
-   |__img16.png
+/mini-croupier
+	|_/train
+	   |_/goblin
+	        |__/1793_goblin.jpeg
+                |__/...
+                |__/574433_goblin.png
+	   |_/knight
+                |__/2700_knight.jpeg
+                |__/...
+		|__/574302_knight.png
+	   |__img10.png
+	|_val/
+	   |_/goblin
+		|__/420750_goblin.png
+		|__/...
+		|__/509541_goblin.png
+           |_/knight
+                |__/457158_knight.png
+		|__/...
+		|__/539413_knight.png
 ```
 
 ...
