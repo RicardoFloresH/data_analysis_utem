@@ -176,6 +176,8 @@ como este: [`alkzar90/mini-croupier`](https://huggingface.co/datasets/alkzar90/m
 
 **Ejercicio 2:** Usando el mismo Colab de la sección anterior, vaya a la última sección títulada _"5. Crea y carga `mini-croupier`"_, para descargar su propia version del dataset `usuario/mini-croupier`. Generé una visualización de grilla para ver algunas imágenes de su dataset.
 
+**Ejercicio 3:** Crea tu propio dataset de imágenes siguiendo estas instrucciones.
+
 
 ## Conclusiones
 
