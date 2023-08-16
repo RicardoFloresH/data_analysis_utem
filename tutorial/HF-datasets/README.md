@@ -123,19 +123,41 @@ estructurada la carpeta dentro de [`assets/mini-croupier.zip`](https://github.co
 
 Observa que dentro del primer nivel, se encuentra el archivo `README.md` y las carpetas `train` y `val`. Estas carpetas definiran el nombre de las
 particiones en nuestro dataset, y las imagenes que se encuentran en cada uno
-de las carpetas solo serán miembro de esa partición. Luego, y un nivel más abajo, tenemos las carpetas con los nombres `goblin` y `knight`, dentro de cada partición. Cada una establece las etiquetas (i.e. `ys` únicos) de las observaciones, esta muestra solo contiene dos tipos de criaturas: trasgos (goblins) y caballeros (knights). Finalmente, el último nivel contiene las observaciones que serán las imágenes que conforman el mini-dataset. Ahora explora cuántas imágenes hay por cada partición y etiqueta para familiarizarte con los datos.
+de las carpetas solo serán miembro de esa partición. Luego, y un nivel más abajo, tenemos las carpetas con los nombres `goblin` y `knight`, dentro de cada partición. Cada una establece las etiquetas (i.e. `ys` únicos) de las observaciones, recuerda que la muestra solo contiene dos tipos de criaturas: trasgos (goblins) y caballeros (knights). Finalmente, el último nivel contiene las observaciones que serán las imágenes que conforman el mini-dataset. Ahora explora cuántas imágenes hay por cada partición y etiqueta para familiarizarte con los datos.
 
 Esta forma de organizar el dataset se conoce como _"image folder"_, y es útil porque a partir de esta convención, el repositorio de datos en Hugging Face puede inferir la estructura de nuestros datos y automáticamente crear el dataset. Si el conjunto de datos no es grande, esta sencilla estrategia es el cámino. Respecto al archivo `README.md`, verás más adelante que controla la página de información del dataset, como texto descriptivo y tags.
 
 
-Si bien uno podría crear un solo conjunto de datos y delegar la separación
-de las particiones al usuario, tiene sus ventajas dejarlo pre-establecido.
+Nota: Si bien uno podría crear un conjunto de datos sin particiones y delegar la separación al usuario, tiene sus ventajas dejarlo pre-establecido.
 La más notoria es comparar resultados directamente: cualquier usuario que use
-el dataset tendrá los mismos subconjuntos para entrenar, desarrollar, y evaluar
-las métricas finales.
+el dataset tendrá los mismos subconjuntos para entrenar, desarrollar, y evaluar las métricas finales.
 
 ### Dataset desde 0
 
 <p align="center">
 <img src="./assets/hf-new-dataset.png" width="760" height="525" alt="A screenshot that shows the 'new dataset' option in a HF profle">
+</p>
+
+...
+
+<p align="center">
+<img src="./assets/hf-new-dataset-form.png" width="760" height="525" alt="A screenshot that shows the 'new dataset' form in HF platform">
+</p>
+
+...
+
+<p align="center">
+<img src="./assets/hf-new-dataset-form.png" width="760" height="525" alt="A screenshot that shows the 'new dataset' form in HF platform">
+</p>
+
+...
+
+<p align="center">
+<img src="./assets/hf-repo-mini-croupier.png" width="760" height="525" alt="A screenshot that shows the mini-croupier dataset in HF platform">
+</p>
+
+...
+
+<p align="center">
+<img src="./assets/hf-add-files.png" width="760" height="525" alt="A screenshot that shows how to add files in the mini-croupier dataset in HF platform">
 </p>
