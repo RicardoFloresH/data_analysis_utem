@@ -96,7 +96,7 @@ En esta sección crearemos un conjunto de datos a partir de una muestra del
 ### `ImageFolder` approach
 
 Antes de saltar a la creación del dataset, analicemos primero cómo se encuentra
-estructurada la carpeta dentro de `assets/mini-croupier.zip`](https://github.com/RicardoFloresH/data_analysis_utem/raw/main/tutorial/HF-datasets/assets/mini-croupier.zip).
+estructurada la carpeta dentro de [`assets/mini-croupier.zip`](https://github.com/RicardoFloresH/data_analysis_utem/raw/main/tutorial/HF-datasets/assets/mini-croupier.zip).
 
 ```
 /mini-croupier
@@ -121,10 +121,8 @@ estructurada la carpeta dentro de `assets/mini-croupier.zip`](https://github.com
 		|___/539413_knight.png
 ```
 
-Notems 
-...
-
-...
+Notemos que dentro del primer nivel, se encuentra el archivo `README.md` y las carpetas `train` y `val`. Estas carpetas definieran el nombre de las
+particiones en nuestro dataset, y las imagenes que se encuentren en cada unode las carpetas solo será miembro de esa partición. Luego, y un nivel más abajo, tenemos las carpetas con los nombres `goblin` y `knight`, dentro de cada partición. Cada una define las etiquetas (i.e. `ys` únicos), nuestro conjunto de datos solo tiene dos tipos de criatuas: tragos (goblins) y caballeros (knights). Finalmente, el último nivel contiene las observaciones que serán las imágenes que coonforman este mini-dataset. Explora cuantas imágenes hay por cada partición y etiqueta para familiarizarte con los datos.
 
 
 Si bien uno podría crear un solo conjunto de datos y delegar la separación
