@@ -95,32 +95,33 @@ En esta sección crearemos un conjunto de datos a partir de una muestra del
 
 ### `ImageFolder` approach
 
-Antes de saltar a la creación del dataset, analicemos cómo se encuentran
-las imágenes estructuradas en el repositorio de datos. 
+Antes de saltar a la creación del dataset, analicemos primero cómo se encuentra
+estructurada la carpeta dentro de `assets/mini-croupier.zip`](https://github.com/RicardoFloresH/data_analysis_utem/raw/main/tutorial/HF-datasets/assets/mini-croupier.zip).
 
 ```
 /mini-croupier
+	|_/README.md
 	|_/train
-	   |_/goblin
-	        |__/1793_goblin.jpeg
-                |__/...
-                |__/574433_goblin.png
-	   |_/knight
-                |__/2700_knight.jpeg
-                |__/...
-		|__/574302_knight.png
-	   |__img10.png
-	|_val/
-	   |_/goblin
-		|__/420750_goblin.png
-		|__/...
-		|__/509541_goblin.png
-           |_/knight
-                |__/457158_knight.png
-		|__/...
-		|__/539413_knight.png
+	   |__/goblin
+	        |___/1793_goblin.jpeg
+                |___/...
+                |___/574433_goblin.png
+	   |__/knight
+                |___/2700_knight.jpeg
+                |___/...
+		|___/574302_knight.png
+	|_/val
+	   |__/goblin
+		|___/420750_goblin.png
+		|___/...
+		|___/509541_goblin.png
+           |__/knight
+                |___/457158_knight.png
+		|___/...
+		|___/539413_knight.png
 ```
 
+Notems 
 ...
 
 ...
