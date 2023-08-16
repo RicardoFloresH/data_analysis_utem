@@ -122,9 +122,10 @@ estructurada la carpeta dentro de [`assets/mini-croupier.zip`](https://github.co
 ```
 
 Observa que dentro del primer nivel, se encuentra el archivo `README.md` y las carpetas `train` y `val`. Estas carpetas definiran el nombre de las
-particiones en nuestro dataset, y las imagenes que se encuentren en cada unode las carpetas solo será miembro de esa partición. Luego, y un nivel más abajo, tenemos las carpetas con los nombres `goblin` y `knight`, dentro de cada partición. Cada una define las etiquetas (i.e. `ys` únicos), esta muestra de datos solo contiene dos tipos de criatuas: tragos (goblins) y caballeros (knights). Finalmente, el último nivel contiene las observaciones que serán las imágenes que conforman el mini-dataset. Explora cuantas imágenes hay por cada partición y etiqueta para familiarizarte con los datos.
+particiones en nuestro dataset, y las imagenes que se encuentran en cada uno
+de las carpetas solo serán miembro de esa partición. Luego, y un nivel más abajo, tenemos las carpetas con los nombres `goblin` y `knight`, dentro de cada partición. Cada una establece las etiquetas (i.e. `ys` únicos) de las observaciones, esta muestra solo contiene dos tipos de criaturas: trasgos (goblins) y caballeros (knights). Finalmente, el último nivel contiene las observaciones que serán las imágenes que conforman el mini-dataset. Ahora explora cuántas imágenes hay por cada partición y etiqueta para familiarizarte con los datos.
 
-Esta forma de organizar los datos se conoce como _"image folder"_, y es útil porque a partir de esta convención, el repositorio de datos en Hugging Face puede inferir la estructura de nuestros datos y automáticamente crear el dataset. Si el conjunto de datos no es grande, esta sencilla estrategia es el cámino.
+Esta forma de organizar el dataset se conoce como _"image folder"_, y es útil porque a partir de esta convención, el repositorio de datos en Hugging Face puede inferir la estructura de nuestros datos y automáticamente crear el dataset. Si el conjunto de datos no es grande, esta sencilla estrategia es el cámino. Respecto al archivo `README.md`, verás más adelante que controla la página de información del dataset, como texto descriptivo y tags.
 
 
 Si bien uno podría crear un solo conjunto de datos y delegar la separación
