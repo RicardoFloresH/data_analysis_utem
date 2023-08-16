@@ -134,32 +134,43 @@ el dataset tendrá los mismos subconjuntos para entrenar, desarrollar, y evaluar
 
 ### Dataset desde 0
 
+Dirigase a su cuenta de Hugging Face, haga click en la foto de su usuario que se encuentra en la esquina superior derecha, al desplegarse el menú, debes escoger la opción "+ New Dataset".
+
 <p align="center">
 <img src="./assets/hf-new-dataset.png" width="760" height="525" alt="A screenshot that shows the 'new dataset' option in a HF profle">
 </p>
 
-...
+Se va a desplegar un formulraio par crear el nuevo repositorio de datos. Debe crear el repositorio con el nombre `mini-croupier` y licencia `apache-2.0`, deje la opción pública activada para que cualquiera pueda encontrar su repositorio de datos. Haga click en el botón _"Create dataset"_.
 
 <p align="center">
 <img src="./assets/hf-new-dataset-form.png" alt="A screenshot that shows the 'new dataset' form in HF platform">
 </p>
 
-...
+Ahora se encuentra en su nuevo repositorio de datos, debiera ser parecido al a imagen de abajo. Siempre puedes ir a tu repositorio, ingresando a tu perfil de Hugging Face, en la sección de datasets, deberían aparecer todos tus repositorios de datos. Una vez en el repositorio, haz click en la opción _"Files and versions"_ que aparece bajo el nombre del repo.
 
 <p align="center">
 <img src="./assets/hf-repo-mini-croupier.png" alt="A screenshot that shows the mini-croupier dataset in HF platform">
 </p>
 
-...
+Esta parte es similar al contenido de un repositorio en GitHub, es donde se encuentran los archivos. Haz click en la opción _"Add file"_, y luego en la alternativa "_Upload files"_ del menú que se despliega.
 
 <p align="center">
 <img src="./assets/hf-add-files.png" alt="A screenshot that shows how to add files in the mini-croupier dataset in HF platform">
 </p>
 
-...
+Lo único que debemos hacer ahora es desplazar el archivo `README.md`, y las carpetas con imágenes `train` y `val`. Todo esto se encuentra contenido en el archivo [`assets/mini-croupier.zip`](https://github.com/RicardoFloresH/data_analysis_utem/raw/main/tutorial/HF-datasets/assets/mini-croupier.zip). Se puede observar en la misma página como se van cargando los archivos. Una vez que todo se encuentre cargado, ir al final de la página donde encontraran un recuadro para realizar el _commit_. Pueden copiar el título y la descripcción del _commit_ que aparece en la foto. Esto es para ir dejando registro de los cambios en nuestro repositorio.
+
 
 <p align="center">
 <img src="./assets/hf-upload-files.png" alt="A screenshot that shows how to add files in the in HF platform">
 <img src="./assets/hf-commit-files.png" alt="A screenshot that shows how to commit files in the HF platform">
 </p>
+
+
+Si realizaron todos los pasos correctamente, su repositorio se debiera ver
+como este: [`alkzar90/mini-croupier`](https://huggingface.co/datasets/alkzar90/mini-croupier/tree/main).
+
+**Ejercicio 1:** Modifique el archivo README para agregar su nombre. Puede modificar archivos directamente desde su repositorio de datos, para esto debe encontrar el archivo `README.md`, abrirlo, editar, y commitear los cambios.
+
+**Ejercicio 2:** Usando el mismo Colab de la sección anterior, vaya a la última sección títulada _"5. Crea y carga `mini-croupier`"_, para descargar su propia version del dataset `usuario/mini-croupier`. Generé una visualización de grilla para ver algunas imágenes de su dataset.
 
