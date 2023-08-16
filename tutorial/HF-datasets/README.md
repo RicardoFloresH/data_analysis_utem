@@ -87,8 +87,8 @@ En esta sección crearemos un conjunto de datos a partir de una muestra del
 ---
 
 <p align="center">
-<img src="assets/567612_goblin.png" width="223" height="311" alt="goblin id card 567612">
-<img src="assets/571601a_knight.png" width="223" height="311" alt="knight id card 571601">
+<img src="assets/567612_goblin.png" alt="goblin id card 567612">
+<img src="assets/571601_knight.png" alt="knight id card 571601">
 </p>
 
 ---
