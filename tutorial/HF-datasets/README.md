@@ -121,8 +121,10 @@ estructurada la carpeta dentro de [`assets/mini-croupier.zip`](https://github.co
 		|___/539413_knight.png
 ```
 
-Notemos que dentro del primer nivel, se encuentra el archivo `README.md` y las carpetas `train` y `val`. Estas carpetas definieran el nombre de las
-particiones en nuestro dataset, y las imagenes que se encuentren en cada unode las carpetas solo será miembro de esa partición. Luego, y un nivel más abajo, tenemos las carpetas con los nombres `goblin` y `knight`, dentro de cada partición. Cada una define las etiquetas (i.e. `ys` únicos), nuestro conjunto de datos solo tiene dos tipos de criatuas: tragos (goblins) y caballeros (knights). Finalmente, el último nivel contiene las observaciones que serán las imágenes que coonforman este mini-dataset. Explora cuantas imágenes hay por cada partición y etiqueta para familiarizarte con los datos.
+Observa que dentro del primer nivel, se encuentra el archivo `README.md` y las carpetas `train` y `val`. Estas carpetas definiran el nombre de las
+particiones en nuestro dataset, y las imagenes que se encuentren en cada unode las carpetas solo será miembro de esa partición. Luego, y un nivel más abajo, tenemos las carpetas con los nombres `goblin` y `knight`, dentro de cada partición. Cada una define las etiquetas (i.e. `ys` únicos), esta muestra de datos solo contiene dos tipos de criatuas: tragos (goblins) y caballeros (knights). Finalmente, el último nivel contiene las observaciones que serán las imágenes que conforman el mini-dataset. Explora cuantas imágenes hay por cada partición y etiqueta para familiarizarte con los datos.
+
+Esta forma de organizar los datos se conoce como _"image folder"_, y es útil porque a partir de esta convención, el repositorio de datos en Hugging Face puede inferir la estructura de nuestros datos y automáticamente crear el dataset. Si el conjunto de datos no es grande, esta sencilla estrategia es el cámino.
 
 
 Si bien uno podría crear un solo conjunto de datos y delegar la separación
