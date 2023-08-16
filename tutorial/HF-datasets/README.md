@@ -141,23 +141,25 @@ el dataset tendrá los mismos subconjuntos para entrenar, desarrollar, y evaluar
 ...
 
 <p align="center">
-<img src="./assets/hf-new-dataset-form.png" width="760" height="525" alt="A screenshot that shows the 'new dataset' form in HF platform">
+<img src="./assets/hf-new-dataset-form.png" alt="A screenshot that shows the 'new dataset' form in HF platform">
 </p>
 
 ...
 
 <p align="center">
-<img src="./assets/hf-new-dataset-form.png" width="760" height="525" alt="A screenshot that shows the 'new dataset' form in HF platform">
+<img src="./assets/hf-repo-mini-croupier.png" alt="A screenshot that shows the mini-croupier dataset in HF platform">
 </p>
 
 ...
 
 <p align="center">
-<img src="./assets/hf-repo-mini-croupier.png" width="760" height="525" alt="A screenshot that shows the mini-croupier dataset in HF platform">
+<img src="./assets/hf-add-files.png" alt="A screenshot that shows how to add files in the mini-croupier dataset in HF platform">
 </p>
 
 ...
 
 <p align="center">
-<img src="./assets/hf-add-files.png" width="760" height="525" alt="A screenshot that shows how to add files in the mini-croupier dataset in HF platform">
+<img src="./assets/hf-upload-files.png" alt="A screenshot that shows how to add files in the in HF platform">
+<img src="./assets/hf-commit-files.png" alt="A screenshot that shows how to commit files in the HF platform">
 </p>
+
